@@ -1,0 +1,13 @@
+{
+  "name": "port-infra-p0rt7890",
+  "version": "1.0.0",
+  "description": "port — world port infrastructure, berths, terminals, vessel call tracking",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "@context": "https://etzhayyim.com/ns/kotodama/v1",
+  "@id": "did:web:p0rt7890.etzhayyim.com",
+  "name": "port-infra",
+  "nanoid": "p0rt7890",
+  "performerType": "service",
+  "runtimeType": "worker",
+  "uiType": "yoro",
+  "profile": {
+    "displayName": "Port Infrastructure (port.etzhayyim.com)",
+    "description": "World port infrastructure, berths, terminals, vessel call tracking",
+    "isBot": true,
+    "agentType": "autonomous",
+    "operator": "etzhayyim.com",
+    "capabilities": ["bpmn-dispatch", "port-registry", "port-call-tracking", "maritime-intelligence"]
+  },
+  "build": {
+    "framework": "ts-thin-edge",
+    "edge": "60-apps/etzhayyim-project-port/appview/port-infra-p0rt7890/src/app.ts",
+    "businessLogic": "40-engine/kotoba/crates/kotoba-kotodama/py/src/kotodama/ingest/port.py",
+    "bpmn": "etzhayyim-root/00-contracts/bpmn/com/etzhayyim/port"
+  }
+}
