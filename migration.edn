@@ -1,4 +1,8 @@
 {:schema "etzhayyim.migration/v1"
  :source {:repository "etzhayyim/root" :revision "57d57fc47f4b2544f2f71e8905c279f5cdf090f4" :path "60-apps/etzhayyim-project-port" :tree "b7a6cc7cf47305816e2dab4cdaf950a939e118bb" :tracked-files 15 :bytes 14931}
  :destination {:repository "etzhayyim/com-etzhayyim-app-port"}
- :identity {:allowed-additions ["README.edn" "migration.edn"]}}
+ ;; :allowed-additions is what makes "everything else is verbatim from :source" a
+ ;; checkable statement. Measured 2026-08-15: 183 repositories declare this key and
+ ;; nothing reads it, so an unlisted addition breaks no gate -- it just makes the
+ ;; claim silently false.
+ :identity {:allowed-additions ["README.edn" "migration.edn" "docs/operator-quickstart.md"]}}
