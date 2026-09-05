@@ -1,0 +1,12 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "port — world port infrastructure, berths, terminals, vessel call tracking (appview UI: shadow-cljs + reagent + kotoba-ui)",
+  "main": "index.js",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
