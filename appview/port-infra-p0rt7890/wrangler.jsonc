@@ -1,6 +1,5 @@
 {
   "name": "kotodama-p0rt7890",
-  "main": "./src/app.ts",
   "compatibility_date": "2025-03-17",
   "compatibility_flags": [
     "nodejs_compat",
@@ -10,7 +9,7 @@
     "APP_CAPABILITIES": "[\"bpmn-dispatch\",\"port-registry\",\"port-call-tracking\",\"maritime-intelligence\"]",
     "APP_DESCRIPTION": "World port infrastructure, berths, terminals, vessel call tracking",
     "APP_DISPLAY_NAME": "Port Infrastructure (port.etzhayyim.com)",
-    "APP_FRAMEWORK": "shadow-cljs-edge-bff",
+    "APP_FRAMEWORK": "cljs-reagent-re-frame-jp-go-dds",
     "APP_NANOID": "p0rt7890",
     "APP_PERFORMER_TYPE": "service",
     "APP_UI_TYPE": "yoro",
@@ -27,7 +26,7 @@
     }
   ],
   "assets": {
-    "directory": "../../web/dist",
+    "directory": "./cljs/public",
     "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "none"
