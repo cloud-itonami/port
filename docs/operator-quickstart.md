@@ -139,7 +139,7 @@ across the workspace:
 ```bash
 cd appview/port-infra-p0rt7890/cljs
 npm install
-node <root>/scripts/resource-guard.mjs run build -- npx shadow-cljs compile app
+node <root>/scripts/resource-guard.mjs run build -- amu compile --target wasm32-browser app
 ```
 
 This was run as part of the Svelte→cljs migration:
