@@ -156,7 +156,7 @@ intended request-routing behavior before deploying.
 
 ## 5. Where the actual behaviour lives
 
-From `src/app.ts` and `CLAUDE.md`, none of it verifiable from here:
+From `src/app.ts` and `AGENTS.md`, none of it verifiable from here:
 
 | Thing | Where |
 |---|---|
